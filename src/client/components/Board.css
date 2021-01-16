@@ -1,0 +1,50 @@
+.cell {
+  border: 1px groove black;
+  width: 100px;
+  height: 100px;
+}
+
+.row {
+  display: flex;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.marked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: tomato;
+  position: absolute;
+  z-index: 2;
+  font-size: 100px;
+}
+
+.board-number {
+  position: absolute;
+  z-index: 1;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 75px;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.list-of-users {
+  /* list-style-type: none; */
+  position: absolute;
+  left: -10px;
+  width: 100px;
+  height: 120px;
+}
+
+.list-of-users > li {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 2rem;
+}

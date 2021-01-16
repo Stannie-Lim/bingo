@@ -1,0 +1,25 @@
+.list-of-numbers {
+  display: flex;
+  align-items: center;
+  overflow: auto;
+  list-style-type: none;
+}
+
+.number {
+  margin: 0 2rem;
+  padding: 1rem;
+}
+
+.number:first-child {
+  background-color: tomato;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.number-typography {
+  font-size: 3rem;
+}
+
+.typography {
+  font-family: "Open Sans Condensed", sans-serif;
+}
