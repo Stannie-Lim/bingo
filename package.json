@@ -4,12 +4,13 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --mode=production",
     "build:dev": "npm run build -- --watch --mode=development",
     "seed": "node scripts/seed.js",
     "prettify": "prettier --write \"**/*.{js,jsx,json,css,scss,md}\"",
     "lint": "eslint ./ --ignore-path .gitignore",
     "lint-fix": "npm run lint -- --fix",
+    "start": "npm run build && node src/server",
     "start:dev": "nodemon src/server --ignore dist/ --ignore src/client & npm run build:dev"
   },
   "husky": {
